@@ -1,0 +1,59 @@
+:root{
+    --font-tittle: 'Seymour One', sans-serif;
+    --font-text: 'Nunito Sans', sans-serif;
+
+
+}
+
+body{
+    background: rgb(242, 193, 190);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-text);
+}
+
+.container h1{
+    font-family: var(--font-tittle);
+    font-size: 2.5rem;
+}
+
+.dibujo, #palabra, #btn {
+    margin-left: 7rem;
+}
+
+.hidden{
+    color: transparent;
+}
+
+#letras-usadas{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#palabra{
+    margin-left: 6rem;
+}
+
+.letter {
+    margin: 0 7px;
+    position: relative;
+    text-align: center;
+}
+
+.letter::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(1, 36, 126);
+    min-width: 12px;
+}
+
+button{
+    margin-top: 1rem;
+    border: none;
+}

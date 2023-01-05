@@ -5,8 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego Ahorcado</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans:wght@600;700&family=Rubik+Vinyl&family=Seymour+One&family=Source+Code+Pro:wght@300;400;500;600&family=Unbounded:wght@400;500;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>AHORCADO</h1>
+        <div class="dibujo">
+            <canvas id="paint"></canvas>
+            <div id="letras-usadas"></div>
+        </div>
+        <div id="palabra"></div>
+        <button id="btn">Iniciar/Reiniciar</button>
+    </div>
+
+    <script src="assets/js/game.js"></script>
 </body>
 </html>
