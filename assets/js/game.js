@@ -101,7 +101,7 @@ const dibujarAhorcado = () => {
     ahorcado.scale(20, 20);
     ahorcado.clearRect(0, 0, canvas.width, canvas.height);
     ahorcado.fillStyle = '#576cf3';
-    ahorcado.fillRect(0, 7, 4, 1);
+    ahorcado.fillRect(0, 7, 6, 1);
     ahorcado.fillRect(1, 0, 1, 8);
     ahorcado.fillRect(2, 0, 3, 1);
     ahorcado.fillRect(4, 1, 1, 1);
