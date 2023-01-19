@@ -74,7 +74,7 @@ const letraIngresada = letra =>{
     if(palabraSeleccionada.includes(letra)) {
         letraCorrecta(letra);
         score++;
-        document.getElementById("score").innerHTML = score;
+        document.getElementById("score").innerHTML = "Puntuación: " + score;
     } else {
         letraIncorrecta();
     }
@@ -122,7 +122,7 @@ const iniciarJuego = () => {
     seleccionadorPalabra();
     pintarPalabra();
     document.addEventListener('keydown', eventLetter);
-    document.getElementById("score").innerHTML = 0;
+    document.getElementById("score").innerHTML = "Puntuación: " + 0;
 }
 
 btn.addEventListener('click', iniciarJuego);
