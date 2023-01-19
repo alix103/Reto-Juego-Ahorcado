@@ -122,6 +122,7 @@ const iniciarJuego = () => {
     seleccionadorPalabra();
     pintarPalabra();
     document.addEventListener('keydown', eventLetter);
+    score = 0;
 }
 
 btn.addEventListener('click', iniciarJuego);
