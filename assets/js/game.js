@@ -3,6 +3,7 @@ const palabrasJuego = ['perro', 'gato', 'casa', 'carro', 'ballena', 'gorila', 'm
 const palabra = document.getElementById('palabra');
 const btn = document.getElementById('btn');
 const letrasUsadas = document.getElementById('letras-usadas');
+const puntuacion = document.getElementById('score');
 
 let canvas = document.getElementById('paint');
 let ahorcado = canvas.getContext('2d');
@@ -22,6 +23,7 @@ let palabraSeleccionada;
 let letraUsada;
 let errores;
 let aciertos;
+let score = 0;
 
 const seleccionadorPalabra = () => {
     let palabras = palabrasJuego[Math.floor((Math.random() * palabrasJuego.length))].toUpperCase();
@@ -37,7 +39,7 @@ const gameOver = () => {
 const finJuego = () => {
     document.removeEventListener('keydown', eventLetter);
     btn.style.display = 'block';
-    alert("Victoria");
+    alert("¡Lo has logrado!");
 }
 
 const añadirLetra = letra => {
@@ -71,6 +73,8 @@ const letraCorrecta = letra => {
 const letraIngresada = letra =>{
     if(palabraSeleccionada.includes(letra)) {
         letraCorrecta(letra);
+        score++;
+        document.getElementById("score").innerHTML = score;
     } else {
         letraIncorrecta();
     }
